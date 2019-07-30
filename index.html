@@ -10,10 +10,10 @@
         function(data) {
           //alert("Data Loaded: " + data.message);
           if (data.message == "ERROR") {
-            $("#url").val = "Sorry! Error happened! ";
+            $("#url").text("Sorry! Error happened! ");
           } else {
             $("#url").attr("href", data.message);
-            $("#url").text = "here";
+            $("#url").text("here");
           }
         }
       );
